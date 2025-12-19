@@ -1,3 +1,6 @@
+:root {
+    primary-color:var
+}
 nav {
 
 nav .img-fluid{
@@ -21,4 +24,32 @@ nav .img-fluid{
 .nav-icons{
     gap: 45px;
 }
+}
+
+.hero-section {
+  height: 90vh;
+  background: url("../img/hero.webp") center/cover no-repeat;
+  font-family: Poppins;
+}
+.hero-content{
+    background-color: #FFF3E3;
+}
+.hero-content{
+
+    .content{
+        font-size: 18px;
+        letter-spacing: 0.15em;
+    }
+    h1{
+        color: #B88E2F;
+        font-size: 52px;
+    }
+    .btn{
+        background-color: #B88E2F;
+        color: #ffff;
+        padding: 25px 72px;
+        margin-top: 46px;
+        border-radius: 0%;
+        font-size: 16px;
+    }
 }
