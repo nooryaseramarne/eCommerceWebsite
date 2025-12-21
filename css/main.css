@@ -46,3 +46,15 @@ nav {
         font-size: 16px;
     }
 }
+.BrowseTheRange{
+    font-family: Poppins;
+    h2{
+        font-size: 32px;
+    }
+    p{
+        font-size: 20px;
+    }
+    h5{
+        font-size: 24px;
+    }
+}
