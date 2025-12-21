@@ -58,3 +58,38 @@ nav {
         font-size: 24px;
     }
 }
+footer{
+    font-family: Poppins;
+}
+footer p {
+  color: #9F9F9F;
+  font-size: 14px;
+  
+}
+
+footer h6 {
+  font-size: 16px;
+  font-weight: 500; 
+  color: #9F9F9F;
+}
+
+.fw-regular {
+  font-weight: 400;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+footer  .p-end{
+    color: #000000;
+    font-size: 14px;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer input::placeholder {
+  font-size: 14px;
+  color: #9F9F9F;
+
+}
+
