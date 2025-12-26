@@ -320,11 +320,27 @@ footer  .p-end{
 }
 
 .shop-hero {
-  height: 300px;
+  height: 316px;
   background: url("../img/heroshop.webp") center/cover no-repeat;
   font-family: Poppins;
   font-size: 48px;
   p , span{
     font-size: 16px;
   }
+}
+
+.filter-bar{
+    font-family: Poppins;
+    background-color: #F9F1E7;
+}
+.filter-bar svg:hover {
+  opacity: 0.6;
+}
+
+.filter-box {
+  background-color: #fff;
+  padding: 6px 16px;
+  font-size: 14px;
+  min-width: 50px;
+  text-align: center;
 }
