@@ -506,3 +506,112 @@ font-family: 'Poppins', sans-serif;
 
 
 
+/*features-section. */
+.page-btn:hover {
+  background-color: #B88E2F;
+  color: white;
+}
+
+.features-section {
+  background: #f9f1e7; 
+}
+
+.feature-icon img {
+  font-size: 32px;
+  color: #3a3a3a;
+}
+
+.feature-box h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0;
+  margin-bottom: 4px;
+}
+
+.feature-box p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0;
+  margin: 0;
+  color: #898989; 
+}
+
+@media (max-width: 768px) {
+  .feature-box h6 {
+    font-size: 18px;
+  }
+
+  .feature-box p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+            .col-md-3 {
+                width: 50%; 
+            }
+            
+            .features-section {
+                padding: 60px 0;
+            }
+            
+            .feature-box {
+                padding: 15px;
+            }
+        }
+        
+@media (max-width: 767px) {
+            .col-sm-6 {
+                width: 100%; 
+            }
+            
+            .features-section {
+                padding: 40px 0;
+            }
+            
+            .feature-box {
+                justify-content: flex-start;
+                max-width: 350px;
+                margin: 0 auto;
+                background-color: white;
+                border-radius: 15px;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            }
+            
+            .feature-box h6 {
+                font-size: 18px;
+            }
+            
+            .feature-box p {
+                font-size: 14px;
+            }
+        }
+        
+@media (max-width: 480px) {
+            .feature-box {
+                padding: 15px;
+                max-width: 100%;
+            }
+            
+            .feature-icon {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .feature-box h6 {
+                font-size: 16px;
+            }
+            
+            .feature-box p {
+                font-size: 13px;
+            }
+        }
+        
+        .feature-icon img[alt] {
+            max-width: 100%;
+            height: auto;
+        }
