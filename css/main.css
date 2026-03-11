@@ -871,11 +871,28 @@ max-height:100%;
 object-fit:contain;
 }
 
-/*  cart page */
+/* cart page */
 .cart-hero {
-   height: 316px;
+  height: 316px;
   background: url("../img/heroshop.webp") center/cover no-repeat;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.cart-hero::before {
+  content: "";
+  display: block;
+  width: 49px;
+  height: 49px;
+  background: url("../img/Furniro.webp") center/contain no-repeat;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .cart-title {
@@ -894,4 +911,61 @@ object-fit:contain;
 .cart-breadcrumb span {
   font-weight: 300;  
   color: #9F9F9F;  
+}
+
+@media (max-width: 992px) {
+  .cart-hero {
+    height: 280px;
+  }
+  
+  .cart-title {
+    font-size: 42px;
+  }
+  
+  .cart-hero::before {
+    display: none;  
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-hero {
+    height: 240px;
+  }
+  
+  .cart-title {
+    font-size: 36px;
+  }
+  
+  .cart-breadcrumb {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cart-hero {
+    height: 200px;
+  }
+  
+  .cart-title {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+  
+  .cart-breadcrumb {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .cart-hero {
+    height: 180px;
+  }
+  
+  .cart-title {
+    font-size: 24px;
+  }
+  
+  .cart-breadcrumb {
+    font-size: 13px;
+  }
 }
