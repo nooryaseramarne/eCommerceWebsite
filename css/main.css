@@ -1477,12 +1477,16 @@ textarea.form-control {
 
 /* checkout page */
 
-.checkout-section {
-  margin: 50px;
+.checkout-section{
+padding:63px 0;
 }
 
-.billing-left {
-  max-width: 600px;
+.row.g-5{
+--bs-gutter-x:70px;
+}
+
+.billing-left{
+max-width:734px;
 }
 
 .section-title {
@@ -1540,9 +1544,11 @@ textarea.form-control {
 }
 
 
-.order-summary {
-  background: #fff;
-  padding: 30px;
+.order-summary{
+background:#fff;
+padding:40px;
+width:608px;
+
 }
 
 .order-header {
@@ -1621,16 +1627,17 @@ textarea.form-control {
   color: #000;
 }
 
-.place-order {
-  width: 318px;
-  padding: 15px;
-  background: #fff;
-  border: 2px solid #999;
-  border-radius: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
+.place-order{
+width:318px;
+height:64px;
+padding:15px;
+background:#fff;
+border:1px solid #000;
+border-radius:12px;
+font-size:16px;
+cursor:pointer;
+display:block;
+margin:30px auto 0;
 }
 
 .place-order:hover {
