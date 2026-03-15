@@ -1643,3 +1643,92 @@ margin:30px auto 0;
 .place-order:hover {
   background: #f5f5f5;
 }
+
+@media (max-width: 992px){
+
+.checkout-section{
+padding:40px 20px;
+}
+
+.billing-left{
+max-width:100%;
+}
+
+.order-summary{
+width:100%;
+margin-top:40px;
+}
+
+.place-order{
+width:260px;
+}
+
+}
+
+
+@media (max-width: 768px){
+
+.checkout-section{
+padding:30px 15px;
+}
+
+.section-title{
+font-size:26px;
+margin-bottom:25px;
+}
+
+.billing-form input,
+.billing-form select{
+height:55px;
+}
+
+.billing-form textarea{
+height:100px;
+}
+
+.order-summary{
+padding:25px;
+}
+
+.order-header{
+font-size:20px;
+}
+
+.price{
+font-size:20px;
+}
+
+.place-order{
+width:220px;
+height:55px;
+font-size:15px;
+}
+
+}
+
+
+@media (max-width: 480px){
+
+.checkout-section{
+padding:25px 10px;
+}
+
+.order-summary{
+padding:20px;
+}
+
+.product-line,
+.subtotal,
+.total{
+font-size:14px;
+}
+
+.price{
+font-size:18px;
+}
+
+.place-order{
+width:200px;
+}
+
+}
