@@ -1,360 +1,426 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">   
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/main.css">
-  </head>
-  <body>
-   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
-  <div class="container">
-    <img src="img/Furniro.webp" class="img-fluid" alt="Furniro furniture store logo">
-    <a class="navbar-brand fw-bold" href="#">Furniro</a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
 
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+    <div class="container">
+      <img src="img/Furniro.webp" class="img-fluid" alt="Furniro furniture store logo">
+      <a class="navbar-brand fw-bold" href="#">Furniro</a>
 
-      <div class="nav-icons d-flex ">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 24 24"><path fill="currentColor" d="M20 12V7h2v6h-2m0 4h2v-2h-2m-10-2c2.67 0 8 1.34 8 4v3H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10.9c-2.97 0-6.1 1.46-6.1 2.1v1.1h12.2V17c0-.64-3.13-2.1-6.1-2.1m0-9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8A2.1 2.1 0 0 0 10 5.9"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11.5a7.5 7.5 0 1 1-15 0a7.5 7.5 0 0 1 15 0m-2.107 5.42l3.08 3.08"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M3.25 10.03c0-2.7 2.37-4.78 5.15-4.78c1.433 0 2.695.672 3.6 1.542c.905-.87 2.166-1.542 3.6-1.542c2.78 0 5.15 2.08 5.15 4.78c0 1.85-.789 3.476-1.882 4.852c-1.09 1.372-2.518 2.537-3.884 3.484c-.523.362-1.05.695-1.534.941c-.453.231-.975.443-1.45.443s-.996-.212-1.45-.443a14 14 0 0 1-1.533-.941c-1.367-.947-2.794-2.112-3.885-3.484C4.039 13.506 3.25 11.88 3.25 10.03M8.4 6.75c-2.08 0-3.65 1.53-3.65 3.28c0 1.403.596 2.71 1.556 3.918c.962 1.21 2.257 2.279 3.565 3.185c.495.343.96.634 1.36.838c.428.218.676.279.769.279s.341-.061.77-.28a12 12 0 0 0 1.36-.837c1.307-.906 2.602-1.974 3.564-3.185c.96-1.208 1.556-2.515 1.556-3.918c0-1.75-1.57-3.28-3.65-3.28c-1.194 0-2.31.713-3.005 1.619a.75.75 0 0 1-1.19 0C10.71 7.463 9.595 6.75 8.4 6.75" clip-rule="evenodd"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 1024 1024"><path fill="currentColor" d="M922.9 701.9H327.4l29.9-60.9l496.8-.9c16.8 0 31.2-12 34.2-28.6l68.8-385.1c1.8-10.1-.9-20.5-7.5-28.4a34.99 34.99 0 0 0-26.6-12.5l-632-2.1l-5.4-25.4c-3.4-16.2-18-28-34.6-28H96.5a35.3 35.3 0 1 0 0 70.6h125.9L246 312.8l58.1 281.3l-74.8 122.1a34.96 34.96 0 0 0-3 36.8c6 11.9 18.1 19.4 31.5 19.4h62.8a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7h161.1a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7H923c19.4 0 35.3-15.8 35.3-35.3a35.42 35.42 0 0 0-35.4-35.2M305.7 253l575.8 1.9l-56.4 315.8l-452.3.8zm96.9 612.7c-17.4 0-31.6-14.2-31.6-31.6s14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6m325.1 0c-17.4 0-31.6-14.2-31.6-31.6s14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6"/></svg>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-icons d-flex ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M20 12V7h2v6h-2m0 4h2v-2h-2m-10-2c2.67 0 8 1.34 8 4v3H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10.9c-2.97 0-6.1 1.46-6.1 2.1v1.1h12.2V17c0-.64-3.13-2.1-6.1-2.1m0-9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8A2.1 2.1 0 0 0 10 5.9" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M19 11.5a7.5 7.5 0 1 1-15 0a7.5 7.5 0 0 1 15 0m-2.107 5.42l3.08 3.08" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 24 24">
+            <path fill="currentColor" fill-rule="evenodd"
+              d="M3.25 10.03c0-2.7 2.37-4.78 5.15-4.78c1.433 0 2.695.672 3.6 1.542c.905-.87 2.166-1.542 3.6-1.542c2.78 0 5.15 2.08 5.15 4.78c0 1.85-.789 3.476-1.882 4.852c-1.09 1.372-2.518 2.537-3.884 3.484c-.523.362-1.05.695-1.534.941c-.453.231-.975.443-1.45.443s-.996-.212-1.45-.443a14 14 0 0 1-1.533-.941c-1.367-.947-2.794-2.112-3.885-3.484C4.039 13.506 3.25 11.88 3.25 10.03M8.4 6.75c-2.08 0-3.65 1.53-3.65 3.28c0 1.403.596 2.71 1.556 3.918c.962 1.21 2.257 2.279 3.565 3.185c.495.343.96.634 1.36.838c.428.218.676.279.769.279s.341-.061.77-.28a12 12 0 0 0 1.36-.837c1.307-.906 2.602-1.974 3.564-3.185c.96-1.208 1.556-2.515 1.556-3.918c0-1.75-1.57-3.28-3.65-3.28c-1.194 0-2.31.713-3.005 1.619a.75.75 0 0 1-1.19 0C10.71 7.463 9.595 6.75 8.4 6.75"
+              clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 1024 1024">
+            <path fill="currentColor"
+              d="M922.9 701.9H327.4l29.9-60.9l496.8-.9c16.8 0 31.2-12 34.2-28.6l68.8-385.1c1.8-10.1-.9-20.5-7.5-28.4a34.99 34.99 0 0 0-26.6-12.5l-632-2.1l-5.4-25.4c-3.4-16.2-18-28-34.6-28H96.5a35.3 35.3 0 1 0 0 70.6h125.9L246 312.8l58.1 281.3l-74.8 122.1a34.96 34.96 0 0 0-3 36.8c6 11.9 18.1 19.4 31.5 19.4h62.8a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7h161.1a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7H923c19.4 0 35.3-15.8 35.3-35.3a35.42 35.42 0 0 0-35.4-35.2M305.7 253l575.8 1.9l-56.4 315.8l-452.3.8zm96.9 612.7c-17.4 0-31.6-14.2-31.6-31.6s14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6m325.1 0c-17.4 0-31.6-14.2-31.6-31.6s14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6" />
+          </svg>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
-<main>
+  </nav>
+  <main>
     <section class="cart-hero d-flex align-items-center justify-content-center text-center">
-  <div>
-    <h1 class="cart-title">Blog</h1>
-    <p class="cart-breadcrumb">Home &gt; <span>Blog</span></p>
-  </div>
-</section>
+      <div>
+        <h1 class="cart-title">Blog</h1>
+        <p class="cart-breadcrumb">Home &gt; <span>Blog</span></p>
+      </div>
+    </section>
 
-<section class="blog-section py-5">
-<div class="container">
-<div class="row">
+    <section class="blog-section py-5">
+      <div class="container">
+        <div class="row">
 
-<div class="col-lg-8">
-<div class="blog-post mb-5">
+          <div class="col-lg-8">
+            <div class="blog-post mb-5">
 
-<img src="img/blogpage/blog1.webp" class="img-fluid blog-img">
+              <img src="img/blogpage/blog1.webp" class="img-fluid blog-img">
 
-<div class="blog-meta mt-3">
+              <div class="blog-meta mt-3">
 
-<div class="meta-item">
-<svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 640 640"><path fill="#9f9f9f" d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"/></svg>
-<span>Admin</span>
-</div>
+                <div class="meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 640 640">
+                    <path fill="#9f9f9f"
+                      d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z" />
+                  </svg>
+                  <span>Admin</span>
+                </div>
 
-<div class="meta-item">
-<svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 640 640"><path fill="#9f9f9f" d="M224 64C206.3 64 192 78.3 192 96L192 128L160 128C124.7 128 96 156.7 96 192L96 240L544 240L544 192C544 156.7 515.3 128 480 128L448 128L448 96C448 78.3 433.7 64 416 64C398.3 64 384 78.3 384 96L384 128L256 128L256 96C256 78.3 241.7 64 224 64zM96 288L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 288L96 288z"/></svg>
-<span>14 Oct 2022</span>
-</div>
+                <div class="meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 640 640">
+                    <path fill="#9f9f9f"
+                      d="M224 64C206.3 64 192 78.3 192 96L192 128L160 128C124.7 128 96 156.7 96 192L96 240L544 240L544 192C544 156.7 515.3 128 480 128L448 128L448 96C448 78.3 433.7 64 416 64C398.3 64 384 78.3 384 96L384 128L256 128L256 96C256 78.3 241.7 64 224 64zM96 288L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 288L96 288z" />
+                  </svg>
+                  <span>14 Oct 2022</span>
+                </div>
 
-<div class="meta-item">
-<svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="#9f9f9f" d="M96.5 160L96.5 309.5C96.5 326.5 103.2 342.8 115.2 354.8L307.2 546.8C332.2 571.8 372.7 571.8 397.7 546.8L547.2 397.3C572.2 372.3 572.2 331.8 547.2 306.8L355.2 114.8C343.2 102.7 327 96 310 96L160.5 96C125.2 96 96.5 124.7 96.5 160zM208.5 176C226.2 176 240.5 190.3 240.5 208C240.5 225.7 226.2 240 208.5 240C190.8 240 176.5 225.7 176.5 208C176.5 190.3 190.8 176 208.5 176z"/></svg>
-<span>Wood</span>
-</div>
+                <div class="meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18"
+                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                    <path fill="#9f9f9f"
+                      d="M96.5 160L96.5 309.5C96.5 326.5 103.2 342.8 115.2 354.8L307.2 546.8C332.2 571.8 372.7 571.8 397.7 546.8L547.2 397.3C572.2 372.3 572.2 331.8 547.2 306.8L355.2 114.8C343.2 102.7 327 96 310 96L160.5 96C125.2 96 96.5 124.7 96.5 160zM208.5 176C226.2 176 240.5 190.3 240.5 208C240.5 225.7 226.2 240 208.5 240C190.8 240 176.5 225.7 176.5 208C176.5 190.3 190.8 176 208.5 176z" />
+                  </svg>
+                  <span>Wood</span>
+                </div>
 
-</div>
+              </div>
 
-<h4 class="blog-title">Going all-in with millennial design</h4>
+              <h4 class="blog-title">Going all-in with millennial design</h4>
 
-<p class="blog-text">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin
-aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis 
-in. Cursus mattis molestie a iaculis at erat.Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit 
-ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.
-</p>
+              <p class="blog-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere
+                sollicitudin
+                aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus
+                turpis
+                in. Cursus mattis molestie a iaculis at erat.Nibh cras pulvinar mattis nunc sed blandit libero.
+                Pellentesque elit
+                ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.
+              </p>
 
-<a href="#" class="read-more">Read more</a>
+              <a href="#" class="read-more">Read more</a>
 
-</div>
+            </div>
 
-<div class="blog-post">
+            <div class="blog-post">
 
-<img src="img/blogpage/blog2.webp" class="img-fluid blog-img">
+              <img src="img/blogpage/blog2.webp" class="img-fluid blog-img">
 
-<div class="blog-meta mt-3">
+              <div class="blog-meta mt-3">
 
-<div class="meta-item">
-<svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 640 640"><path fill="#9f9f9f" d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"/></svg>
-<span>Admin</span>
-</div>
+                <div class="meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 640 640">
+                    <path fill="#9f9f9f"
+                      d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z" />
+                  </svg>
+                  <span>Admin</span>
+                </div>
 
-<div class="meta-item">
-<svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 640 640"><path fill="#9f9f9f" d="M224 64C206.3 64 192 78.3 192 96L192 128L160 128C124.7 128 96 156.7 96 192L96 240L544 240L544 192C544 156.7 515.3 128 480 128L448 128L448 96C448 78.3 433.7 64 416 64C398.3 64 384 78.3 384 96L384 128L256 128L256 96C256 78.3 241.7 64 224 64zM96 288L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 288L96 288z"/></svg>
-<span>14 Oct 2022</span>
-</div>
+                <div class="meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 640 640">
+                    <path fill="#9f9f9f"
+                      d="M224 64C206.3 64 192 78.3 192 96L192 128L160 128C124.7 128 96 156.7 96 192L96 240L544 240L544 192C544 156.7 515.3 128 480 128L448 128L448 96C448 78.3 433.7 64 416 64C398.3 64 384 78.3 384 96L384 128L256 128L256 96C256 78.3 241.7 64 224 64zM96 288L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 288L96 288z" />
+                  </svg>
+                  <span>14 Oct 2022</span>
+                </div>
 
-<div class="meta-item">
-<svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="#9f9f9f" d="M96.5 160L96.5 309.5C96.5 326.5 103.2 342.8 115.2 354.8L307.2 546.8C332.2 571.8 372.7 571.8 397.7 546.8L547.2 397.3C572.2 372.3 572.2 331.8 547.2 306.8L355.2 114.8C343.2 102.7 327 96 310 96L160.5 96C125.2 96 96.5 124.7 96.5 160zM208.5 176C226.2 176 240.5 190.3 240.5 208C240.5 225.7 226.2 240 208.5 240C190.8 240 176.5 225.7 176.5 208C176.5 190.3 190.8 176 208.5 176z"/></svg>
-<span>Wood</span>
-</div>
+                <div class="meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18"
+                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                    <path fill="#9f9f9f"
+                      d="M96.5 160L96.5 309.5C96.5 326.5 103.2 342.8 115.2 354.8L307.2 546.8C332.2 571.8 372.7 571.8 397.7 546.8L547.2 397.3C572.2 372.3 572.2 331.8 547.2 306.8L355.2 114.8C343.2 102.7 327 96 310 96L160.5 96C125.2 96 96.5 124.7 96.5 160zM208.5 176C226.2 176 240.5 190.3 240.5 208C240.5 225.7 226.2 240 208.5 240C190.8 240 176.5 225.7 176.5 208C176.5 190.3 190.8 176 208.5 176z" />
+                  </svg>
+                  <span>Wood</span>
+                </div>
 
-</div>
+              </div>
 
-<h4 class="blog-title">Exploring new ways of decorating</h4>
+              <h4 class="blog-title">Exploring new ways of decorating</h4>
 
-<p class="blog-text">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin
-aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis 
-in. Cursus mattis molestie a iaculis at erat.Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit 
-ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.
-</p>
+              <p class="blog-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere
+                sollicitudin
+                aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus
+                turpis
+                in. Cursus mattis molestie a iaculis at erat.Nibh cras pulvinar mattis nunc sed blandit libero.
+                Pellentesque elit
+                ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.
+              </p>
 
-<a href="#" class="read-more">Read more</a>
+              <a href="#" class="read-more">Read more</a>
 
-</div>
+            </div>
 
-<div class="blog-post">
+            <div class="blog-post">
 
-<img src="img/blogpage/blog3.webp" class="img-fluid blog-img">
+              <img src="img/blogpage/blog3.webp" class="img-fluid blog-img">
 
-<div class="blog-meta mt-3">
+              <div class="blog-meta mt-3">
 
-<div class="meta-item">
-<svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 640 640"><path fill="#9f9f9f" d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"/></svg>
-<span>Admin</span>
-</div>
+                <div class="meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 640 640">
+                    <path fill="#9f9f9f"
+                      d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z" />
+                  </svg>
+                  <span>Admin</span>
+                </div>
 
-<div class="meta-item">
-<svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 640 640"><path fill="#9f9f9f" d="M224 64C206.3 64 192 78.3 192 96L192 128L160 128C124.7 128 96 156.7 96 192L96 240L544 240L544 192C544 156.7 515.3 128 480 128L448 128L448 96C448 78.3 433.7 64 416 64C398.3 64 384 78.3 384 96L384 128L256 128L256 96C256 78.3 241.7 64 224 64zM96 288L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 288L96 288z"/></svg>
-<span>14 Oct 2022</span>
-</div>
+                <div class="meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 640 640">
+                    <path fill="#9f9f9f"
+                      d="M224 64C206.3 64 192 78.3 192 96L192 128L160 128C124.7 128 96 156.7 96 192L96 240L544 240L544 192C544 156.7 515.3 128 480 128L448 128L448 96C448 78.3 433.7 64 416 64C398.3 64 384 78.3 384 96L384 128L256 128L256 96C256 78.3 241.7 64 224 64zM96 288L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 288L96 288z" />
+                  </svg>
+                  <span>14 Oct 2022</span>
+                </div>
 
-<div class="meta-item">
-<svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="#9f9f9f" d="M96.5 160L96.5 309.5C96.5 326.5 103.2 342.8 115.2 354.8L307.2 546.8C332.2 571.8 372.7 571.8 397.7 546.8L547.2 397.3C572.2 372.3 572.2 331.8 547.2 306.8L355.2 114.8C343.2 102.7 327 96 310 96L160.5 96C125.2 96 96.5 124.7 96.5 160zM208.5 176C226.2 176 240.5 190.3 240.5 208C240.5 225.7 226.2 240 208.5 240C190.8 240 176.5 225.7 176.5 208C176.5 190.3 190.8 176 208.5 176z"/></svg>
-<span>Wood</span>
-</div>
+                <div class="meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18"
+                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                    <path fill="#9f9f9f"
+                      d="M96.5 160L96.5 309.5C96.5 326.5 103.2 342.8 115.2 354.8L307.2 546.8C332.2 571.8 372.7 571.8 397.7 546.8L547.2 397.3C572.2 372.3 572.2 331.8 547.2 306.8L355.2 114.8C343.2 102.7 327 96 310 96L160.5 96C125.2 96 96.5 124.7 96.5 160zM208.5 176C226.2 176 240.5 190.3 240.5 208C240.5 225.7 226.2 240 208.5 240C190.8 240 176.5 225.7 176.5 208C176.5 190.3 190.8 176 208.5 176z" />
+                  </svg>
+                  <span>Wood</span>
+                </div>
 
-</div>
+              </div>
 
-<h4 class="blog-title">Handmade pieces that took time to make</h4>
+              <h4 class="blog-title">Handmade pieces that took time to make</h4>
 
-<p class="blog-text">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin
-aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis 
-in. Cursus mattis molestie a iaculis at erat.Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit 
-ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.
-</p>
+              <p class="blog-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere
+                sollicitudin
+                aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus
+                turpis
+                in. Cursus mattis molestie a iaculis at erat.Nibh cras pulvinar mattis nunc sed blandit libero.
+                Pellentesque elit
+                ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.
+              </p>
 
-<a href="#" class="read-more">Read more</a>
+              <a href="#" class="read-more">Read more</a>
 
-</div>
-</div>
+            </div>
+          </div>
 
-<div class="col-lg-4">
+          <div class="col-lg-4">
 
-<div class="blog-search mb-4">
-<input type="text" >
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="#9f9f9f" d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/></svg>
-</div>
+            <div class="blog-search mb-4">
+              <input type="text">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path fill="#9f9f9f"
+                  d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z" />
+              </svg>
+            </div>
 
-<div class="blog-categories mb-5">
+            <div class="blog-categories mb-5">
 
-<h5>Categories</h5>
+              <h5>Categories</h5>
 
-<ul class="ms-5">
-<li>Crafts<span>2</span></li>
-<li>Design<span>8</span></li>
-<li>Handmade<span>7</span></li>
-<li>Interior<span>1</span></li>
-<li>Wood<span>6</span></li>
-</ul>
+              <ul class="ms-5">
+                <li>Crafts<span>2</span></li>
+                <li>Design<span>8</span></li>
+                <li>Handmade<span>7</span></li>
+                <li>Interior<span>1</span></li>
+                <li>Wood<span>6</span></li>
+              </ul>
 
-</div>
+            </div>
 
-<div class="recent-posts">
+            <div class="recent-posts">
 
-<h5>Recent Posts</h5>
+              <h5>Recent Posts</h5>
 
-<div class="recent-item ">
-<img src="img/blogpage/Rectangle-69.webp">
-<div>
-<p>Going all-in with<br>
-   millennial design</p>
-<span>03 Aug 2022</span>
-</div>
-</div>
+              <div class="recent-item ">
+                <img src="img/blogpage/Rectangle-69.webp">
+                <div>
+                  <p>Going all-in with<br>
+                    millennial design</p>
+                  <span>03 Aug 2022</span>
+                </div>
+              </div>
 
-<div class="recent-item">
-<img src="img/blogpage/Rectangle-69-_1_.webp">
-<div>
-<p>Exploring new ways<br>
-   of decorating</p>
-<span>03 Aug 2022</span>
-</div>
-</div>
+              <div class="recent-item">
+                <img src="img/blogpage/Rectangle-69-_1_.webp">
+                <div>
+                  <p>Exploring new ways<br>
+                    of decorating</p>
+                  <span>03 Aug 2022</span>
+                </div>
+              </div>
 
-<div class="recent-item">
-<img src="img/blogpage/Rectangle-69-_2_.webp">
-<div>
-<p>Handmade pieces<br>
-   that took time</p>
-<span>03 Aug 2022</span>
-</div>
-</div>
+              <div class="recent-item">
+                <img src="img/blogpage/Rectangle-69-_2_.webp">
+                <div>
+                  <p>Handmade pieces<br>
+                    that took time</p>
+                  <span>03 Aug 2022</span>
+                </div>
+              </div>
 
-<div class="recent-item">
-<img src="img/blogpage/Rectangle-69-_3_.webp">
-<div>
-<p>Modern home <br>
-   in Milan</p>
-<span>03 Aug 2022</span>
-</div>
-</div>
+              <div class="recent-item">
+                <img src="img/blogpage/Rectangle-69-_3_.webp">
+                <div>
+                  <p>Modern home <br>
+                    in Milan</p>
+                  <span>03 Aug 2022</span>
+                </div>
+              </div>
 
-<div class="recent-item">
-<img src="img/blogpage/Rectangle-69-_4_.webp">
-<div>
-<p>Colorful office<br>
-   redesign</p>
-<span>03 Aug 2022</span>
-</div>
-</div>
+              <div class="recent-item">
+                <img src="img/blogpage/Rectangle-69-_4_.webp">
+                <div>
+                  <p>Colorful office<br>
+                    redesign</p>
+                  <span>03 Aug 2022</span>
+                </div>
+              </div>
 
-</div>
+            </div>
 
-</div>
+          </div>
 
-</div>
-</div>
-<div class="blog-pagination">
-    <button class="page active">1</button>
-    <button class="page">2</button>
-    <button class="page">3</button>
-    <button class="next">Next</button>
-</div>
-</section>
+        </div>
+      </div>
+      <div class="blog-pagination">
+        <button class="page active">1</button>
+        <button class="page">2</button>
+        <button class="page">3</button>
+        <button class="next">Next</button>
+      </div>
+    </section>
 
 
     <section class="features-section py-5">
-  <div class="container">
-    <div class="row gy-4">
+      <div class="container">
+        <div class="row gy-4">
 
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="feature-box d-flex align-items-start gap-3">
-          <div class="feature-icon">
-            <img src="./img/featuressection/trophy-1.webp">
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="feature-box d-flex align-items-start gap-3">
+              <div class="feature-icon">
+                <img src="./img/featuressection/trophy-1.webp">
+              </div>
+              <div>
+                <h6>High Quality</h6>
+                <p>crafted from top materials</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h6>High Quality</h6>
-            <p >crafted from top materials</p>
+
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="feature-box d-flex align-items-start gap-3">
+              <div class="feature-icon">
+                <img src="./img/featuressection/Vector-_1_.webp">
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Warranty Protection</h6>
+                <p class="mb-0 text-muted">Over 2 years</p>
+              </div>
+            </div>
           </div>
+
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="feature-box d-flex align-items-start gap-3">
+              <div class="feature-icon">
+                <img src="./img/featuressection/shipping.webp">
+              </div>
+              <div>
+                <h6>Free Shipping</h6>
+                <p>Order over $150</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="feature-box d-flex align-items-start gap-3">
+              <div class="feature-icon">
+                <img src="./img/featuressection/guarantee.webp">
+              </div>
+              <div>
+                <h6>24 / 7 Support</h6>
+                <p>Dedicated support</p>
+              </div>
+            </div>
+          </div>
+
         </div>
+      </div>
+    </section>
+  </main>
+  <footer class="pt-5 border-top">
+    <div class="container">
+      <div class="row gy-4">
+
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-5">Funiro.</h5>
+          <p class="fw-regular mb-0">
+            400 University Drive Suite 200 Coral <br> Gables,<br>
+            FL 33134 USA
+          </p>
+        </div>
+
+        <div class="col-md-2">
+          <h6 class="fw-medium mb-5">Links</h6>
+          <ul class="list-unstyled">
+            <li class="mb-4 fw-medium"><a href="#" class="text-dark text-decoration-none">Home</a></li>
+            <li class="mb-4 fw-medium"><a href="#" class="text-dark text-decoration-none">Shop</a></li>
+            <li class="mb-4 fw-medium"><a href="#" class="text-dark text-decoration-none">About</a></li>
+            <li><a href="#" class="text-dark text-decoration-none fw-medium">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <h6 class="fw-medium mb-5">Help</h6>
+          <ul class="list-unstyled">
+            <li class="mb-4 fw-medium"><a href="#" class="text-dark text-decoration-none">Payment Options</a></li>
+            <li class="mb-4 fw-medium"><a href="#" class="text-dark text-decoration-none">Returns</a></li>
+            <li><a href="#" class="text-dark text-decoration-none fw-medium">Privacy Policies</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <h6 class="fw-medium mb-5">Newsletter</h6>
+          <form class="d-flex gap-2">
+            <input type="email" class=" border-0 border-bottom rounded-0" placeholder="Enter Your Email Address">
+            <button class="btn btn-link text-dark fw-semibold p-0">
+              SUBSCRIBE
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <hr class="my-4">
+      <p class="p-end fw-regular mb-3">
+        2023 funiro. All rights reserved
+      </p>
     </div>
-
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="feature-box d-flex align-items-start gap-3">
-          <div class="feature-icon">
-            <img src="./img/featuressection/Vector-_1_.webp">
-          </div>
-          <div>
-            <h6 class="fw-bold mb-1">Warranty Protection</h6>
-            <p class="mb-0 text-muted">Over 2 years</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="feature-box d-flex align-items-start gap-3">
-          <div class="feature-icon">
-            <img src="./img/featuressection/shipping.webp">
-          </div>
-          <div>
-            <h6 >Free Shipping</h6>
-            <p >Order over $150</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-3">
-        <div class="feature-box d-flex align-items-start gap-3">
-          <div class="feature-icon">
-            <img src="./img/featuressection/guarantee.webp">
-          </div>
-          <div>
-            <h6 >24 / 7 Support</h6>
-            <p >Dedicated support</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-</main>
-<footer class="pt-5 border-top">
-  <div class="container">
-    <div class="row gy-4">
-
-      <div class="col-md-4">
-        <h5 class="fw-bold mb-5">Funiro.</h5>
-        <p class="fw-regular mb-0">
-          400 University Drive Suite 200 Coral <br> Gables,<br>
-          FL 33134 USA
-        </p>
-      </div>
-
-      <div class="col-md-2">
-        <h6 class="fw-medium mb-5">Links</h6>
-        <ul class="list-unstyled">
-          <li class="mb-4 fw-medium"><a href="#" class="text-dark text-decoration-none">Home</a></li>
-          <li class="mb-4 fw-medium"><a href="#" class="text-dark text-decoration-none">Shop</a></li>
-          <li class="mb-4 fw-medium"><a href="#" class="text-dark text-decoration-none">About</a></li>
-          <li><a href="#" class="text-dark text-decoration-none fw-medium">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-3">
-        <h6 class="fw-medium mb-5">Help</h6>
-        <ul class="list-unstyled">
-          <li class="mb-4 fw-medium"><a href="#" class="text-dark text-decoration-none">Payment Options</a></li>
-          <li class="mb-4 fw-medium"><a href="#" class="text-dark text-decoration-none">Returns</a></li>
-          <li><a href="#" class="text-dark text-decoration-none fw-medium">Privacy Policies</a></li>
-        </ul>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-3">
-        <h6 class="fw-medium mb-5">Newsletter</h6>
-        <form class="d-flex gap-2">
-          <input type="email" class=" border-0 border-bottom rounded-0"
-                 placeholder="Enter Your Email Address">
-          <button class="btn btn-link text-dark fw-semibold p-0">
-            SUBSCRIBE
-          </button>
-        </form>
-      </div>
-
-    </div>
-
-    <hr class="my-4">
-    <p class="p-end fw-regular mb-3">
-      2023 funiro. All rights reserved
-    </p>
-  </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
