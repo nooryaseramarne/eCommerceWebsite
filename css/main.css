@@ -1733,77 +1733,139 @@ width:200px;
 
 }
 
-.product-title{
-font-size:16px;
-font-weight:500;
-margin-bottom:10px;
+        .product-wrapper {
+            background-color: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        /* تنسيق البطاقات */
+        .custom-card {
+            padding: 20px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .text-card {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 55px;
+        }
+        
+        .text-card p {
+            color: #000000;
+            font-size: 28px;
+            line-height: 126%;
+            font-family: Poppins;
+            font-weight: 500;
+        }
+        
+        .view-more-link {
+          font-family: Poppins;
+            color: #727272;
+            text-decoration: underline; 
+            font-weight: 500;
+            font-size: 20px;
+            cursor: pointer;
+            display: inline-block;
+        
+        }
+        
+        .view-more-btn:hover {
+            background-color: #9a7728;
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 180px;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #F9F1E7;
+            font-size: 14px;
+        }
+        
+        .product-name {
+            color: #000000;
+            font-size: 28px;
+            line-height: 126%;
+            font-family: Poppins;
+            font-weight: 500;
+        }
+        
+        .product-price {
+            font-size: 18px;
+            font-weight: 500;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+        
+        .product-rating {
+            display: flex;
+            align-items: center;
+            gap: 8px; 
+        }
+        .span1{
+            color: #000000;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .span2{
+            color: #9F9F9F;
+            font-size: 13px;
+            font-weight: 400;
+        }
+        
+        .add-card {
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .add-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #000;
+            font-family: Poppins;
+            margin-bottom: 15px;
+        }
+        
+        
+        .add-btn {
+    background-color: #b88e2f;
+    color: white;
+    border: none;
+    padding: 12px 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    direction: ltr;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
 }
 
-.view-more{
-font-size:14px;
-text-decoration:none;
-color:#000;
-border-bottom:1px solid #000;
+.add-btn:hover {
+    background-color: #9a7728;
 }
-
-/* card */
-
-.product-card{
-background:#F9F9F9;
-padding:20px;
-border-radius:10px;
-text-align:left;
-}
-
-.product-card img{
-border-radius:10px;
-margin-bottom:15px;
-}
-
-.product-card h6{
-font-size:16px;
-font-weight:600;
-margin-bottom:5px;
-}
-
-.price{
-font-size:14px;
-color:#555;
-margin-bottom:8px;
-}
-
-/* rating */
-
-.rating{
-font-size:13px;
-color:#f4b400;
-display:flex;
-align-items:center;
-gap:5px;
-}
-
-.rating .reviews{
-color:#999;
-margin-left:5px;
-}
-
-/* right side */
-
-.add-label{
-display:block;
-font-size:14px;
-margin-bottom:8px;
-font-weight:500;
-}
-
-.product-select{
-background:#B88E2F;
-color:#fff;
-border:none;
-border-radius:8px;
-padding:10px;
-}
-
-.product-select:focus{
-box-shadow:none;
-}
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .product-wrapper {
+                padding: 20px;
+            }
+        }
