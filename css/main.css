@@ -1732,6 +1732,7 @@ textarea.form-control {
   }
 
 }
+/* product comparison */
 
 .product-wrapper {
   background-color: white;
@@ -1940,7 +1941,6 @@ textarea.form-control {
   padding-right: 50px;
 }
 
-
 .specs-col {
   border-right: 1px solid #e5e5e5;
   padding: 0 15px;
@@ -1959,7 +1959,7 @@ textarea.form-control {
 
 .specs-col ul li {
   font-size: 20px;
-  color: #000000;
+  color: #000;
   margin-bottom: 18px;
   font-weight: 400;
 }
@@ -1983,22 +1983,74 @@ textarea.form-control {
   align-items: flex-start;
 }
 
-.specs-col ul:last-of-type li:nth-child(1) {
-  min-height: 60px;
+.specs-col ul:last-of-type li:nth-child(1) { min-height: 60px; }
+.specs-col ul:last-of-type li:nth-child(2) { min-height: 150px; }
+.specs-col ul:last-of-type li:nth-child(3) { min-height: 100px; }
+.specs-col ul:last-of-type li:nth-child(4) { min-height: 170px; }
+.specs-col ul:last-of-type li:nth-child(5) { min-height: 40px; }
+
+
+@media (max-width: 992px){
+
+  .section-title{
+    font-size: 22px;
+    margin-top: 60px !important;
+  }
+
+  .specs-col{
+    margin-bottom: 40px;
+    border-right: none; 
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 30px;
+  }
+
+  .specs-col:last-child{
+    border-bottom: none;
+  }
+
+  .btn-warning{
+    width: 100%;
+  }
+
 }
 
-.specs-col ul:last-of-type li:nth-child(2) {
-  min-height: 150px;
+
+@media (max-width: 768px){
+  .section-title.invisible{
+    visibility: visible !important;
+  }
+
+  .section-title{
+    font-size: 20px;
+    margin-top: 40px !important;
+  }
+
+  .specs-container{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .specs-col ul li{
+    font-size: 16px;
+  }
+
+  .btn-warning{
+    height: 55px;
+    font-size: 16px;
+  }
+
 }
 
-.specs-col ul:last-of-type li:nth-child(3) {
-  min-height: 100px;
+
+@media (max-width: 576px){
+
+  .section-title{
+    font-size: 18px;
+  }
+
+  .specs-col ul li{
+    font-size: 14px;
+  }
+
 }
 
-.specs-col ul:last-of-type li:nth-child(4) {
-  min-height: 170px;
-}
-
-.specs-col ul:last-of-type li:nth-child(5) {
-  min-height: 40px;
-}
