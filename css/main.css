@@ -535,6 +535,7 @@ footer .p-end {
 
 
 
+
 /*features-section. */
 .page-btn:hover {
   background-color: #B88E2F;
@@ -739,7 +740,7 @@ footer .p-end {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  cursor: pointer;  
 }
 
 .thumb-img img {
