@@ -1110,7 +1110,16 @@ footer .p-end {
   border-radius: 10px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+
 @media (max-width:768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   .cart-table-header {
     display: none;
@@ -1121,7 +1130,8 @@ footer .p-end {
     border: 1px solid #eee;
     border-radius: 10px;
     margin-bottom: 20px;
-    padding: 20px;
+
+    padding: 15px;
   }
 
   .product-info {
@@ -1151,17 +1161,22 @@ footer .p-end {
     font-weight: 600;
   }
 
+  .product-quantity input {
+    width: 50px;
+    max-width: 100%;
+  }
+
   .product-remove {
     justify-content: flex-end;
     margin-top: 10px;
   }
 
   .cart-totals-wrapper {
-    width: 100%;
+    width: 100%;   
     height: auto;
     margin-top: 30px;
+    padding: 20px;
   }
-
 }
 
 /* Blog Page */
