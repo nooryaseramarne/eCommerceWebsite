@@ -1,6 +1,4 @@
-/* --------------------------------------
-   GLOBAL STYLES & RESET
--------------------------------------- */
+/* GLOBAL STYLES & RESET */
 * {
   margin: 0;
   padding: 0;
@@ -18,9 +16,6 @@ img {
   display: block;
 }
 
-/* --------------------------------------
-   TYPOGRAPHY & UTILITIES
--------------------------------------- */
 .fw-regular {
   font-weight: 400;
 }
@@ -37,9 +32,7 @@ img {
   font-weight: 700;
 }
 
-/* --------------------------------------
-   NAVBAR
--------------------------------------- */
+/*  NAVBAR */
 .navbar .navbar-brand {
   font-size: 34px;
   font-family: 'Montserrat', sans-serif;
@@ -71,9 +64,7 @@ img {
   gap: 45px;
 }
 
-/* --------------------------------------
-   HERO SECTION (INDEX)
--------------------------------------- */
+/* HERO SECTION (INDEX) */
 .hero-section {
   height: 90vh;
   background: url("../img/hero.webp") center/cover no-repeat;
@@ -125,9 +116,7 @@ img {
   font-size: 16px;
 }
 
-/* --------------------------------------
-   BROWSE THE RANGE SECTION
--------------------------------------- */
+/* BROWSE THE RANGE SECTION */
 .BrowseTheRange h2 {
   font-size: 32px;
 }
@@ -141,9 +130,7 @@ img {
   font-size: 24px;
 }
 
-/* --------------------------------------
-   ROOMS SECTION
--------------------------------------- */
+/* ROOMS SECTION */
 .rooms-section {
   background-color: #FCF8F3;
   padding: 3rem 0;
@@ -281,9 +268,7 @@ img {
   }
 }
 
-/* --------------------------------------
-   PRODUCT CARDS (Reusable)
--------------------------------------- */
+/* PRODUCT CARDS (Reusable) */
 .product-card-custom {
   position: relative;
   background: #f4f5f7;
@@ -404,9 +389,6 @@ img {
   font-size: 16px;
 }
 
-/* --------------------------------------
-   SHOW MORE BUTTON
--------------------------------------- */
 .show-more-btn {
   background-color: transparent;
   color: #B88E2F;
@@ -424,9 +406,7 @@ img {
   color: white;
 }
 
-/* --------------------------------------
-   FEATURES SECTION
--------------------------------------- */
+/* FEATURES SECTION */
 .features-section {
   background: #f9f1e7;
   padding: 3rem 0;
@@ -460,9 +440,7 @@ img {
   }
 }
 
-/* --------------------------------------
-   FOOTER
--------------------------------------- */
+/* FOOTER */
 footer {
   font-family: 'Poppins', sans-serif;
 }
@@ -483,9 +461,7 @@ footer input::placeholder {
   color: #9F9F9F;
 }
 
-/* --------------------------------------
-   SHOP PAGE - HERO & FILTER
--------------------------------------- */
+/* SHOP PAGE - HERO & FILTER */
 .shop-hero,
 .cart-hero {
   height: 316px;
@@ -572,9 +548,7 @@ footer input::placeholder {
   width: 98px;
 }
 
-/* --------------------------------------
-   PRODUCT PAGE - BREADCRUMB & DETAILS
--------------------------------------- */
+/* PRODUCT PAGE - BREADCRUMB & DETAILS */
 .breadcrumb-wrapper {
   background-color: #F9F1E7;
   padding: 24px 0;
@@ -690,9 +664,7 @@ footer input::placeholder {
   }
 }
 
-/* --------------------------------------
-   CART PAGE
--------------------------------------- */
+/*  CART PAGE */
 .cart-table-header {
   background: #F9F1E7;
   padding: 18px 40px;
@@ -810,9 +782,7 @@ footer input::placeholder {
   }
 }
 
-/* --------------------------------------
-   BLOG PAGE
--------------------------------------- */
+/* BLOG PAGE */
 .blog-img {
   width: 100%;
   border-radius: 10px;
@@ -962,9 +932,7 @@ footer input::placeholder {
   }
 }
 
-/* --------------------------------------
-   CONTACT PAGE
--------------------------------------- */
+/* CONTACT PAGE */
 .contact-section {
   padding: 80px 0;
 }
@@ -1023,9 +991,7 @@ textarea.form-control {
   }
 }
 
-/* --------------------------------------
-   CHECKOUT PAGE
--------------------------------------- */
+/* CHECKOUT PAGE */
 .checkout-section {
   padding: 63px 0;
 }
@@ -1124,9 +1090,7 @@ textarea.form-control {
   }
 }
 
-/* --------------------------------------
-   PRODUCT COMPARISON PAGE
--------------------------------------- */
+/* PRODUCT COMPARISON PAGE */
 .product-wrapper {
   padding: 30px;
 }
