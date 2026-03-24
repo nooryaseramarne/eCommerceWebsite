@@ -842,7 +842,7 @@ footer input::placeholder {
   }
 }
 
-/*  CART PAGE */
+/* CART PAGE */
 .cart-table-header {
   background: #F9F1E7;
   padding: 18px 40px;
@@ -877,6 +877,12 @@ footer input::placeholder {
   height: 90px;
 }
 
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .product-price,
 .product-subtotal {
   color: #9F9F9F;
@@ -898,13 +904,66 @@ footer input::placeholder {
   margin: 0 auto;
 }
 
+.totals-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 61px;
+  text-align: center;
+}
+
+.totals-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 31px;
+  font-size: 16px;
+}
+
+.totals-row span:first-child {
+  font-weight: 500;
+  color: #000;
+}
+
+.totals-row span:last-child {
+  color: #9F9F9F;
+}
+
+.totals-row-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+  font-size: 16px;
+}
+
+.totals-row-total span:first-child {
+  font-weight: 500;
+  color: #000;
+}
+
+.total-price {
+  color: #B88E2F;
+  font-weight: 700;
+  font-size: 20px;
+}
+
 .checkout-btn {
   display: block;
-  margin: auto;
+  margin: 0 auto;
   padding: 12px 40px;
   border: 1px solid #000;
   background: transparent;
   border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.checkout-btn:hover {
+  background-color: #B88E2F;
+  color: white;
+  border-color: #B88E2F;
 }
 
 /* Mobile Cart View */
@@ -957,6 +1016,15 @@ footer input::placeholder {
     width: 100%;
     height: auto;
     margin-top: 30px;
+  }
+  
+  .totals-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  
+  .total-price {
+    font-size: 18px;
   }
 }
 
@@ -1289,20 +1357,20 @@ textarea.form-control {
 }
 
 .product-image {
-  width: 100%;
-  max-width: 285px;
+  width: 105px;
+  object-fit: contain;
   background-color: #FAF3EA;
   margin-bottom: 15px;
 }
 
 .product-name {
-  font-size: 28px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .product-price {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .product-rating {
