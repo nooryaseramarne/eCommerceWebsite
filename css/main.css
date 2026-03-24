@@ -1357,7 +1357,7 @@ textarea.form-control {
 }
 
 .product-image {
-  width: 105px;
+  width: 100%;
   object-fit: contain;
   background-color: #FAF3EA;
   margin-bottom: 15px;
